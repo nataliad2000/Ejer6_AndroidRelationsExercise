@@ -12,5 +12,18 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:text="Hello World!" />
+    <EditText
+        android:id="@+id/textoPrincipal"
+        android:layout_width="match_content"
+        android:imeOptions="actionGo"
+        android:inputType="text"
+        android:layout_height="match_content" 
+    />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="nombre"
+        android:id="@+id/button1"
+    />
 
 </RelativeLayout>
