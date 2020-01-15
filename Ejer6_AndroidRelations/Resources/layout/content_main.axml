@@ -6,24 +6,100 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main">
-
-    <TextView
+    <GridLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="wrap_parent"
+        android:columnCount="3"
         android:layout_centerInParent="true"
-        android:text="Hello World!" />
-    <EditText
-        android:id="@+id/textoPrincipal"
-        android:layout_width="match_content"
-        android:imeOptions="actionGo"
-        android:inputType="text"
-        android:layout_height="match_content" 
-    />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="nombre"
-        android:id="@+id/button1"
-    />
+        android:text="hola mundo"
+      >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <Button
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/botoncero"/>
+             <Button
+            android:text="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/botoncero"/>
+            <Button
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/botonuno"/>
+            <Button
+            android:text="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/botondos"/>
+            <Button
+            android:text="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/botontres" />
+            <Button
+            android:text="4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/botoncuatro" />
+            <Button
+            android:text="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/botoncinco" />
+            <Button
+            android:text="6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/botonseis"/>
+            <Button
+            android:text="7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/botonsiete"/> 
+            <Button
+            android:text="8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/botonocho"/>
+            <Button
+            android:text="9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/botonnueve"/>
+
+            
+        <Button
+            android:text="ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:id="@+id/botonConfirmacion"/>
+    </GridLayout>
 
 </RelativeLayout>
