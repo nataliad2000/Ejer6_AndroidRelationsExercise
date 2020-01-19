@@ -1,5 +1,6 @@
 ﻿using System;
 using Android.App;
+using Android.Content;
 using Android.OS;
 using Android.Runtime;
 using Android.Support.Design.Widget;
@@ -71,14 +72,22 @@ namespace Ejer6_AndroidRelations
         {
             if (textoEditado.Text.Equals("1234"))
             {
-                SetContentView(Resource.Layout.activity_main);
+                pasoPagina();
                 
             }
             else
             {
                 textoEditado.SetTextColor(Android.Graphics.Color.Red);
             }
-        }    
+        }
+
+        private void pasoPagina()
+        {
+            Intent navegacionActividadSegunda = new Intent(this, typeof(Activity1));
+            StartActivity(navegacionActividadSegunda);
+        }
+
+      
     }
 }
 
