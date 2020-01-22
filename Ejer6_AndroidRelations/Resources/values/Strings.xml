@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Ejer6_AndroidRelations</string>
     <string name="action_settings">Settings</string>
+    <string name="combobox">Eliga el genero.....</string>
+    <string-array name="comboboxArray">
+      <item>Hombre</item>
+      <item>Mujer</item>
+      <item>Otro</item>
+    </string-array>
 </resources>
