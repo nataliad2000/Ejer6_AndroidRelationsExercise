@@ -45,6 +45,24 @@ namespace Ejer6_AndroidRelations
             
 
         }
-        
+        void GuargarPersonas(List<Persona>personas)
+        {
+            string fichero = "personas.txt";
+            string linea = null;
+            try
+            {
+                FileInputStream fileInputStream = new FileInputStream(new File(fichero));
+                FileInputStream fileInputStream1 = fileInputStream;
+                StringBuilder stringBuilder = new StringBuilder();
+                stringBuilder.Append("nombre: "+nombre + " apellidos: " + apellidos);
+                
+            }
+            catch (FileNotFoundException e)
+            {
+                Log.Debug("Error", "el fichero no se ha encontrado");
+            }
+
+          
+        }
     }
 }
