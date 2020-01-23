@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activity1.cs" />
+    <Compile Include="ventana2.cs" />
     <Compile Include="fragmentoAgregacion.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Persona.cs" />

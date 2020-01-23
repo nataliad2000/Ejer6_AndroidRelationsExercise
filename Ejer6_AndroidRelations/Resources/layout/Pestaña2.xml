@@ -5,15 +5,21 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <LinearLayout
+      <FrameLayout
+        android:id="@+id/grupoAgregar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:backgroundTint="@color/abc_color_highlight_material"/>
+    <ListView
+      android:id="@+id/tablaPersonasAñadidas"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    android:orientation="vertical">
-    <TextView
-      android:id="@+id/textoPaginaNueva"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="No es correcto el texto"/>
-  </LinearLayout>
+    />
+    <android.support.design.widget.NavigationView
+      android:id="@+id/botonNavegacion"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" 
+      android:layout_alignParentBottom="true"      
+      />
     </RelativeLayout>

@@ -72,13 +72,22 @@ namespace Ejer6_AndroidRelations
         {
             if (textoEditado.Text.Equals("1234"))
             {
-                pasoPagina();
+                guardarRespuesta();
+                SetContentView(Resource.Layout.Activity1Layout);
                 
             }
             else
             {
                 textoEditado.SetTextColor(Android.Graphics.Color.Red);
             }
+        }
+
+        protected void guardarRespuesta()
+        {
+            var principal = Application.Context.GetSharedPreferences("MiApp", Android.Content.FileCreationMode.Private);
+            var editorPrincipal = principal.Edit();
+            editorPrincipal.PutBoolean("hecho", true);
+            editorPrincipal.Commit();
         }
 
         private void pasoPagina()

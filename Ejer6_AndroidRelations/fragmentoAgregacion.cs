@@ -17,10 +17,13 @@ namespace Ejer6_AndroidRelations
     {
         private EditText _nombre;
         private EditText _apellido;
+        private CheckBox _masculino;
+        private CheckBox _femenino;
         private Button _botonAgregacion;
-        public fragmentoAgregacion()
+        Persona p1 = new Persona();
+        public void  FragmentoAgregacion()
         {
-
+            
         }
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -32,7 +35,8 @@ namespace Ejer6_AndroidRelations
             _nombre = vista.FindViewById<EditText>(Resource.Id.nombrePersona);
             _apellido = vista.FindViewById<EditText>(Resource.Id.apellidoPersona);
             _botonAgregacion = vista.FindViewById<Button>(Resource.Id.botonAgregacion);
-
+            _masculino = vista.FindViewById<CheckBox>(Resource.Id.Masculino);
+            _femenino = vista.FindViewById<CheckBox>(Resource.Id.Femenino);
             return vista;
         }
     }
